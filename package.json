@@ -1,0 +1,28 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "A notes application",
+  "main": "note-list-model.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "run-tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaphMB/notes-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaphMB/notes-app/issues"
+  },
+  "homepage": "https://github.com/SaphMB/notes-app#readme",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}
