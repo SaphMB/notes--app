@@ -3,7 +3,7 @@ var assert = {
 		if (!assertion) {
 			throw new Error("Incorrect assertion " + assertion + " is not true");
 		} else {
-			console.log("Correct assertion " + String(assertion));
+			console.log("Correct assertion");
 		};
 	}
 };

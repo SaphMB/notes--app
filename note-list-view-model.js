@@ -8,6 +8,11 @@
 ListView.prototype.getHtml = function() {
   var notes = this._getNoteList().getNotes();
   var htmlToReturn = "<ul>";
+
+	notes.forEach(function (note) {
+		htmlToReturn += ("<li><div>" + note.getText() + "</div></li>");
+	});
+
   htmlToReturn += "</ul>";
   return htmlToReturn;
 };
