@@ -1,7 +1,8 @@
 (function(exports) {
   function ListView(noteList) {
     this.noteList = noteList;
-  };
+  }
+  
   exports.ListView = ListView;
 })(this);
 

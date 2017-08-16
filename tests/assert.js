@@ -1,9 +1,9 @@
 var assert = {
-	truthy: function(assertion) {
+	truthy: function(assertion, description) {
 		if (!assertion) {
-			throw new Error("Incorrect assertion " + assertion + " is not true");
+			throw new Error(description + ": Incorrect assertion " + assertion + " is not true");
 		} else {
-			console.log("Correct assertion");
+			console.log(description + ": Correct assertion");
 		};
 	}
 };
