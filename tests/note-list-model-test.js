@@ -25,3 +25,12 @@ var noteList = new NoteList();
 	};
 	assert.truthy(noteList.getNotes().length === noteCount, description);
 })();
+
+(function notesHaveAnId() {
+	description = "Notelist: notes have a unique id";
+	var noteList = new NoteList()
+	noteList.makeNote("I'm a note");
+	noteList.makeNote("I'm also a note");
+	noteList.makeNote("I too, am a note");
+	assert.truthy(noteList.getNotes()[1].getId() === 1, description);
+})();
