@@ -1,0 +1,1 @@
+window.NoteController = new NoteController();
