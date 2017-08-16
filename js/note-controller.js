@@ -17,7 +17,6 @@
     var app = document.getElementById("app");
     noteView = new SingleNoteView(note);
     app.innerHTML = noteView.getNoteHtml();
-    console.log(noteView.getNoteHtml())
   };
 
   NoteController.prototype.renderHtml = function() {
