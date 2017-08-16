@@ -1,7 +1,6 @@
 (function(exports) {
   function getAppDiv() {
-    element = document.getElementById('app');
-    console.log(element);
+    document.getElementById('app').innerHTML = "Alternative text"
     return element;
   };
   exports.getAppDiv = getAppDiv;
