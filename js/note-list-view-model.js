@@ -11,7 +11,7 @@ ListView.prototype.getHtml = function() {
   var htmlToReturn = "<ul>";
 
 	notes.forEach(function (note) {
-		htmlToReturn += ("<li><div>" + note.getText().substring(0, 19) + "</div></li>");
+		htmlToReturn += ("<li><div><a href='#notes/" + note.getId() + "'>" + note.getText().substring(0, 19) + "</a></div></li>");
 	});
 
   htmlToReturn += "</ul>";

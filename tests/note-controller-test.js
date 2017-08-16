@@ -19,5 +19,5 @@ var noteController = new NoteController(noteList);
   })();
 
   noteController.renderHtml();
-  assert.truthy(document.getElementById("app").innerHTML === "<ul><li><div>test note</div></li></ul>", description);
+  assert.truthy(document.getElementById("app").innerHTML === "<ul><li><div><a href='#notes/0'>test note</a></div></li></ul>", description);
 })();
