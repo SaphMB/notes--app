@@ -2,7 +2,7 @@
   function ListView(noteList) {
     this.noteList = noteList;
   }
-  
+
   exports.ListView = ListView;
 })(this);
 
@@ -11,7 +11,7 @@ ListView.prototype.getHtml = function() {
   var htmlToReturn = "<ul>";
 
 	notes.forEach(function (note) {
-		htmlToReturn += ("<li><div>" + note.getText() + "</div></li>");
+		htmlToReturn += ("<li><div>" + note.getText().substring(0, 19) + "</div></li>");
 	});
 
   htmlToReturn += "</ul>";
